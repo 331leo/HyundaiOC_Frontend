@@ -1,0 +1,33 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  height: 77px;
+  justify-content: space-between;
+  margin-top: 61px;
+  width: 264px;
+}
+
+.class {
+  height: 32px;
+  letter-spacing: -0.60px;
+  line-height: 24px;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 139px;
+}
+
+.name {
+  color: var(--eerie-black);
+  flex: 1;
+  font-family: var(--font-family-sfpro_display-bold);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 700;
+  height: 47px;
+  letter-spacing: -0.90px;
+  line-height: 36px;
+  margin-bottom: -6.5px;
+  margin-right: -2px;
+  max-height: 47px;
+  white-space: nowrap;
+}
+

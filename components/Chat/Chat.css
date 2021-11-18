@@ -1,0 +1,64 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 68px;
+  justify-content: flex-end;
+  width: 301px;
+}
+
+.user-name {
+  flex: 1;
+  letter-spacing: -0.40px;
+  line-height: 16px;
+  margin-bottom: 2.5px;
+  margin-right: 258px;
+  max-height: 21px;
+  white-space: nowrap;
+}
+
+.chat-text {
+  align-items: flex-end;
+  background-color: var(--cararra);
+  border-radius: 22px;
+  display: flex;
+  flex: 1;
+  max-height: 43px;
+}
+
+.text-4 {
+  flex: 1;
+  height: 28px;
+  letter-spacing: -0.53px;
+  line-height: 21px;
+  margin-bottom: 3.5px;
+  margin-left: 16px;
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
+.chat.chat-1 {
+  margin-top: 27px;
+  width: 272px;
+}
+
+.chat.chat-1 .user-name {
+  margin-right: 229px;
+}
+
+.chat.chat-1 .text-4 {
+  margin-right: 17px;
+}
+
+.chat.chat-2 {
+  margin-top: 27px;
+  width: 254px;
+}
+
+.chat.chat-2 .user-name {
+  margin-right: 211px;
+}
+
+.chat.chat-2 .text-4 {
+  margin-right: 12px;
+}
+

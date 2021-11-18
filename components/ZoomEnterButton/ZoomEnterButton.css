@@ -1,0 +1,44 @@
+.zoom-enter-button {
+  align-items: flex-start;
+  align-self: center;
+  background-color: var(--white);
+  border-radius: 30px;
+  display: flex;
+  height: 42px;
+  margin-left: 36px;
+  min-width: 117px;
+  padding: 10px 19px;
+}
+
+.x11-2,
+.x11-3,
+.x11-4,
+.x11-5,
+.x11-6,
+.x11-7,
+.x11-8 {
+  align-items: flex-end;
+  display: flex;
+  height: 20px;
+  min-width: 79px;
+}
+
+.icon-1 {
+  letter-spacing: -0.40px;
+  line-height: 16px;
+  margin-bottom: -2.5px;
+  min-height: 21px;
+  min-width: 25px;
+  white-space: nowrap;
+}
+
+.text-3 {
+  letter-spacing: -0.40px;
+  line-height: 16px;
+  margin-bottom: -4px;
+  margin-left: 8px;
+  min-height: 22px;
+  min-width: 46px;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,23 @@
+.send-area {
+  align-items: flex-end;
+  display: flex;
+  height: 41px;
+  margin-top: 28px;
+  min-width: 875px;
+  position: relative;
+}
+
+.send-button {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-bold);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.55px;
+  line-height: 22px;
+  margin-bottom: 2px;
+  margin-left: 23px;
+  min-height: 28px;
+  min-width: 30px;
+  white-space: nowrap;
+}
+

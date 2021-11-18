@@ -1,0 +1,31 @@
+.teacher {
+  align-items: center;
+  display: flex;
+  height: 39px;
+  min-width: 331px;
+  position: relative;
+}
+
+.teacher-type {
+  letter-spacing: -0.40px;
+  line-height: 16px;
+  margin-top: 3.0px;
+  min-height: 21px;
+  min-width: 56px;
+  white-space: nowrap;
+}
+
+.teacher-name {
+  align-self: flex-end;
+  letter-spacing: -0.60px;
+  line-height: 24px;
+  margin-left: 18px;
+  min-height: 32px;
+  min-width: 128px;
+  white-space: nowrap;
+}
+
+.teacher.teacher-1 {
+  margin-top: 9px;
+}
+

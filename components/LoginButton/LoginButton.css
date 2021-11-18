@@ -1,0 +1,39 @@
+.login-button {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid var(--bay-of-many);
+  border-radius: 9px;
+  cursor: pointer;
+  display: flex;
+  height: 47px;
+  margin-top: 51px;
+  min-width: 365px;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.logo {
+  height: 29px;
+  object-fit: cover;
+  width: 29px;
+}
+
+.text-6 {
+  align-self: flex-end;
+  color: var(--bay-of-many);
+  font-family: var(--font-family-sfpro_display-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: -0.45px;
+  line-height: 18px;
+  margin-bottom: 1px;
+  margin-left: 12px;
+  min-height: 24px;
+  min-width: 205px;
+  white-space: nowrap;
+}
+

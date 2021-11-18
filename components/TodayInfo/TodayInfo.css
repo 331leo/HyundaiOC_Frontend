@@ -1,0 +1,48 @@
+.today-info {
+  align-items: center;
+  display: flex;
+  height: 51px;
+  margin-bottom: 17px;
+  margin-left: 41px;
+  min-width: 732px;
+  position: relative;
+}
+
+.date {
+  letter-spacing: -0.60px;
+  line-height: 24px;
+  margin-top: 7.0px;
+  min-height: 32px;
+  min-width: 205px;
+  white-space: nowrap;
+}
+
+.time {
+  align-self: flex-end;
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-semibold);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 600;
+  letter-spacing: -0.90px;
+  line-height: 36px;
+  margin-bottom: -3.5px;
+  margin-left: 22px;
+  min-height: 47px;
+  min-width: 287px;
+  white-space: nowrap;
+}
+
+.refresh {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-semibold);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.43px;
+  line-height: 17px;
+  margin-left: 11px;
+  margin-top: 4.0px;
+  min-height: 22px;
+  min-width: 20px;
+  white-space: nowrap;
+}
+

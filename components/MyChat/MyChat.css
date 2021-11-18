@@ -1,0 +1,21 @@
+.my-chat {
+  align-items: flex-end;
+  align-self: flex-end;
+  background-color: #e5f0ff;
+  border-radius: 22px;
+  display: flex;
+  height: 170px;
+  justify-content: flex-end;
+  margin-right: 9px;
+  margin-top: 31px;
+  min-width: 475px;
+  padding: 4px 12px;
+}
+
+.text-5 {
+  height: 156px;
+  letter-spacing: -0.53px;
+  line-height: 21px;
+  width: 447px;
+}
+

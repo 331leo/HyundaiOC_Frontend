@@ -1,0 +1,96 @@
+:root { 
+  --alto: #dbdbdb;
+  --bay-of-many: #2b3980;
+  --cararra: #ebebeb;
+  --eerie-black: #1a1d22;
+  --white: #ffffff;
+  --zircon: #f8fbff;
+ 
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 21px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 27px;
+  --font-size-xxxxl: 36px;
+ 
+  --font-family-sfpro_display-bold: "SFPro Display-Bold", Helvetica;
+  --font-family-sfpro_display-medium: "SFPro Display-Medium", Helvetica;
+  --font-family-sfpro_display-regular: "SFPro Display-Regular", Helvetica;
+  --font-family-sfpro_display-semibold: "SFPro Display-Semibold", Helvetica;
+}
+.sfprodisplay-semi-bold-eerie-black-16px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-semibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sfprodisplay-regular-normal-eerie-black-16px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sfprodisplay-bold-eerie-black-27px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-bold);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sfprodisplay-medium-eerie-black-27px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-medium);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sfprodisplay-bold-eerie-black-24px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sfprodisplay-semi-bold-eerie-black-14px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-semibold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sfprodisplay-regular-normal-eerie-black-21px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sfprodisplay-regular-normal-eerie-black-24px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sfprodisplay-semi-bold-eerie-black-18px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-sfpro_display-semibold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.border-1px-alto {
+  border: 1px solid var(--alto);
+}

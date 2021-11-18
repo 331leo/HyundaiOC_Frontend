@@ -1,0 +1,104 @@
+.time-table-2 {
+  align-items: flex-end;
+  display: flex;
+  height: 52px;
+  min-width: 399px;
+  position: relative;
+}
+
+.overlap-group-1 {
+  height: 56px;
+  margin-bottom: -5.5px;
+  position: relative;
+  width: 66px;
+}
+
+.time-text-2 {
+  left: 15px;
+  letter-spacing: -0.40px;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.class-name {
+  left: 0;
+  letter-spacing: -0.68px;
+  line-height: 27px;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+}
+
+.teacher-name-1 {
+  letter-spacing: -0.68px;
+  line-height: 27px;
+  margin-bottom: 3.5px;
+  margin-left: 36px;
+  min-height: 36px;
+  min-width: 144px;
+  white-space: nowrap;
+}
+
+.time-table-2.time-table,
+.time-table-2.time-table-4,
+.time-table-2.time-table-5 {
+  margin-left: 10.0px;
+  margin-top: 26px;
+  min-width: 389px;
+}
+
+.time-table-2.time-table-4 .overlap-group-1,
+.time-table-2.time-table-5 .overlap-group-1,
+.time-table-2.time-table-1-1 .overlap-group-1,
+.time-table-2.time-table-1 .overlap-group-1,
+.time-table-2.time-table .overlap-group-1 {
+  height: 54px;
+  margin-bottom: -4.5px;
+  width: 48px;
+}
+
+.time-table-2.time-table-4 .time-text-2,
+.time-table-2.time-table-5 .time-text-2,
+.time-table-2.time-table .time-text-2 {
+  left: 5px;
+}
+
+.time-table-2.time-table-4 .teacher-name-1,
+.time-table-2.time-table-5 .teacher-name-1,
+.time-table-2.time-table .teacher-name-1 {
+  margin-left: 44px;
+}
+
+.time-table-2.time-table-1,
+.time-table-2.time-table-1-1 {
+  margin-left: 11.0px;
+  margin-top: 26px;
+  min-width: 388px;
+}
+
+.time-table-2.time-table-1-1 .time-text-2,
+.time-table-2.time-table-1 .time-text-2 {
+  left: 4px;
+}
+
+.time-table-2.time-table-1-1 .teacher-name-1,
+.time-table-2.time-table-1 .teacher-name-1 {
+  margin-left: 43px;
+}
+
+.time-table-2.time-table-3 {
+  margin-left: 1.0px;
+  margin-top: 26px;
+  min-width: 398px;
+}
+
+.time-table-2.time-table-3 .overlap-group-1 {
+  width: 65px;
+}
+
+.time-table-2.time-table-3 .time-text-2 {
+  left: 14px;
+}
+
