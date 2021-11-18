@@ -1,8 +1,30 @@
+import axios from "axios";
 import React from "react";
+import { useEffect } from "react";
+import { Redirect } from "react-router";
 import LoginButton from "../LoginButton";
 import "./Login.css";
 
 function Login() {
+  const [token, setToken] = React.useState(localStorage.getItem("HDID_TOKEN"));
+  useEffect(() => {
+    if (token) {
+      axios
+        .get(process.env.OAUTH_HOST + "/v1/users/@me", {
+          headers: { Authorization: "Bearer " + token },
+        })
+        .then((res) => {
+          if (res.status === 200) {
+            console.log(res.data);
+          } else {
+            localStorage.clear();
+          }
+        });
+    }
+  }, []);
+  if (token) {
+    return <Redirect to="/main" />;
+  }
   return (
     <div className="container-center-horizontal">
       <div className="login screen">
