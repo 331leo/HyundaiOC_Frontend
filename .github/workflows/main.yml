@@ -9,7 +9,8 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    
+    env:
+      API_HOST: https://api.oc.hyundaicpu.com
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -24,25 +25,6 @@ jobs:
     
     - name: Build project
       run: npm run build
-
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
-      with:
-        name: production-files
-        path: ./dist
-  
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: production-files
-        path: ./dist
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
