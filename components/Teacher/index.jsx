@@ -3,7 +3,7 @@ import ContactButton from "../ContactButton";
 import "./Teacher.css";
 
 function Teacher(props) {
-  const { teachertype, teachername, className } = props;
+  const { teachertype, teachername, className, contact } = props;
 
   return (
     <div className={`teacher ${className || ""}`}>
@@ -13,7 +13,7 @@ function Teacher(props) {
       <div className="teacher-name sfprodisplay-bold-eerie-black-24px">
         {teachername} 선생님
       </div>
-      <ContactButton />
+      <ContactButton contact={contact} />
     </div>
   );
 }

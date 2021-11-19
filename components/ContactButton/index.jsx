@@ -3,16 +3,19 @@ import "./ContactButton.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
-function ContactButton() {
+function ContactButton(props) {
+  const { contact } = props;
   return (
-    <div className="contact-button border-1px-alto">
-      <div className="x11 sfprodisplay-semi-bold-eerie-black-14px">
-        <div className="icon">
-          <FontAwesomeIcon icon={faPhoneAlt} />
+    <a href={contact} target="_blank">
+      <div className="contact-button border-1px-alto">
+        <div className="x11 sfprodisplay-semi-bold-eerie-black-14px">
+          <div className="icon">
+            <FontAwesomeIcon icon={faPhoneAlt} />
+          </div>
+          <div className="text">연락하기</div>
         </div>
-        <div className="text">연락하기</div>
       </div>
-    </div>
+    </a>
   );
 }
 

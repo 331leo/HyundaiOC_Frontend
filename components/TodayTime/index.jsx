@@ -4,7 +4,6 @@ import "./TodayTime.css";
 
 function TodayTime(props) {
   const {
-    title,
     timeTableProps,
     timeTable2Props,
     timeTable3Props,
@@ -12,13 +11,38 @@ function TodayTime(props) {
     timeTable5Props,
     timeTable6Props,
     timeTable7Props,
+    data,
   } = props;
-
+  const classNameArray = [
+    "",
+    "time-table-4",
+    "time-table-5",
+    "time-table-1-1",
+    "time-table-3",
+    "time-table-1",
+    "time-table",
+  ];
   return (
     <div className="today-time">
-      <div className="title-1 sfprodisplay-bold-eerie-black-24px">{title}</div>
+      <div className="title-1 sfprodisplay-bold-eerie-black-24px">
+        오늘의 시간표
+      </div>
       <div className="overlap-group7">
-        <TimeTable
+        {console.log(data)}
+        {data?.map((item, index) => {
+          console.log(item);
+          return (
+            <TimeTable
+              timetext={index + 1}
+              classname={item?.name}
+              teachername={item?.teacher}
+              url={item?.url}
+              className={classNameArray[index]}
+              key={index}
+            />
+          );
+        })}
+        {/* <TimeTable
           timetext={timeTableProps.timetext}
           classname={timeTableProps.classname}
           teachername={timeTableProps.teachername}
@@ -58,7 +82,7 @@ function TodayTime(props) {
           classname={timeTable7Props.classname}
           teachername={timeTable7Props.teachername}
           className={timeTable7Props.className}
-        />
+        /> */}
       </div>
     </div>
   );

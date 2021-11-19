@@ -63,11 +63,16 @@ function Main(props) {
           </div>
           <div className="flex-col-1">
             {console.log(nowData)}
-            <Teacher teachertype="담임교사" teachername={userData?.teacher} />
+            <Teacher
+              teachertype="담임교사"
+              teachername={userData?.teacher}
+              contact={userData.teacher_tel}
+            />
             <Teacher
               teachertype="교과교사"
               teachername={nowData?.subject ? nowData.subject.teacher : "---"}
               className="teacher-1"
+              contact={nowData?.subject?.teacher_tel}
             />
           </div>
           <TodayInfo
@@ -78,7 +83,10 @@ function Main(props) {
           />
         </div>
         <div className="flex-row-1">
-          <TodayTime {...todayTimeProps} />
+          <TodayTime
+            {...todayTimeProps}
+            data={userData?.classes?.[nowData?.weekday]}
+          />
           <ClassChat
             title={classChatProps.title}
             chatProps={classChatProps.chatProps}
