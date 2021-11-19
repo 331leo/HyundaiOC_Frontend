@@ -11,19 +11,26 @@ import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
 function Main(props) {
-  const {
-    title,
-    teacherProps,
-    teacher2Props,
-    todayInfoProps,
-    todayTimeProps,
-    classChatProps,
-  } = props;
+  const { todayTimeProps, classChatProps } = props;
   const authToken = localStorage.getItem("HDID_TOKEN");
   const [userData, setUserData] = React.useState({});
+  const [nowData, setNowData] = React.useState({});
+  const refrashNowData = () => {
+    axios
+      .get(process.env.API_HOST + "/v1/time/", {
+        headers: { Authorization: "Bearer " + authToken },
+      })
+      .then((res) => {
+        if (res.status === 200) {
+          setNowData(res.data);
+        } else {
+          console.log("현재 정보 불러오기 실패");
+        }
+      });
+  };
   useEffect(() => {
     axios
-      .get(process.env.API_HOST + "/v1/users/@me", {
+      .get(process.env.API_HOST + "/v1/users/class", {
         headers: { Authorization: "Bearer " + authToken },
       })
       .then((res) => {
@@ -35,6 +42,9 @@ function Main(props) {
         }
       });
   }, []);
+  useEffect(() => {
+    refrashNowData();
+  }, []);
   if (!authToken) {
     return <Redirect to="/" />;
   }
@@ -43,26 +53,29 @@ function Main(props) {
       <div className="main screen">
         <div className="flex-row">
           <div className="flex-col">
-            <div className="title">{title}</div>
+            <div className="title">HyundaiOC</div>
             <UserInfo
-              grade={userData.grade}
-              xclass={userData.classnum}
-              num={userData.number}
-              name={userData.name}
+              grade={userData?.student?.grade}
+              xclass={userData?.student?.classnum}
+              num={userData?.student?.number}
+              name={userData?.student?.name}
             />
           </div>
           <div className="flex-col-1">
+            {console.log(nowData)}
+            <Teacher teachertype="담임교사" teachername={userData?.teacher} />
             <Teacher
-              teachertype={teacherProps.teachertype}
-              teachername={teacherProps.teachername}
-            />
-            <Teacher
-              teachertype={teacher2Props.teachertype}
-              teachername={teacher2Props.teachername}
-              className={teacher2Props.className}
+              teachertype="교과교사"
+              teachername={nowData?.subject ? nowData.subject.teacher : "---"}
+              className="teacher-1"
             />
           </div>
-          <TodayInfo date={todayInfoProps.date} time={todayInfoProps.time} />
+          <TodayInfo
+            date={nowData?.date}
+            time={nowData?.period + 1}
+            subject={nowData?.subject}
+            refrash={refrashNowData}
+          />
         </div>
         <div className="flex-row-1">
           <TodayTime {...todayTimeProps} />

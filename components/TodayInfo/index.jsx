@@ -4,18 +4,22 @@ import "./TodayInfo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
 function TodayInfo(props) {
-  const { date, time } = props;
+  const { date, time, subject, refrash } = props;
 
   return (
     <div className="today-info">
       <div className="date sfprodisplay-regular-normal-eerie-black-24px">
         {date}
       </div>
-      <div className="time">{time}</div>
-      <div className="refresh">
-        <FontAwesomeIcon icon={faSyncAlt} />
+      <div className="time">
+        {time > 1 ? `지금은 ${time}교시 입니다.` : "수업시간이 아닙니다."}
       </div>
-      <ZoomButton subject="실험" />
+      <div className="refresh">
+        <a href="#" onClick={refrash}>
+          <FontAwesomeIcon icon={faSyncAlt} />
+        </a>
+      </div>
+      {subject ? <ZoomButton subject={subject} /> : null}
     </div>
   );
 }

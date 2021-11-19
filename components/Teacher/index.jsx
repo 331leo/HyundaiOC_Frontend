@@ -7,8 +7,12 @@ function Teacher(props) {
 
   return (
     <div className={`teacher ${className || ""}`}>
-      <div className="teacher-type sfprodisplay-regular-normal-eerie-black-16px">{teachertype}</div>
-      <div className="teacher-name sfprodisplay-bold-eerie-black-24px">{teachername}</div>
+      <div className="teacher-type sfprodisplay-regular-normal-eerie-black-16px">
+        {teachertype}
+      </div>
+      <div className="teacher-name sfprodisplay-bold-eerie-black-24px">
+        {teachername} 선생님
+      </div>
       <ContactButton />
     </div>
   );

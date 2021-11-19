@@ -21,10 +21,6 @@ function App() {
         </Route>
         <Route path="/main">
           <Main
-            title="HyundaiOC"
-            teacherProps={mainData.teacherProps}
-            teacher2Props={mainData.teacher2Props}
-            todayInfoProps={mainData.todayInfoProps}
             todayTimeProps={mainData.todayTimeProps}
             classChatProps={mainData.classChatProps}
           />
@@ -35,22 +31,6 @@ function App() {
 }
 
 export default App;
-
-const teacherData = {
-  teachertype: "담임교사",
-  teachername: "최형건 선생님",
-};
-
-const teacher2Data = {
-  teachertype: "교과교사",
-  teachername: "고헌영 선생님",
-  className: "teacher-1",
-};
-
-const todayInfoData = {
-  date: "2021년 11월 19일 (금)",
-  time: "지금은 4교시 입니다.",
-};
 
 const timeTableData = {
   timetext: "1교시",
@@ -152,10 +132,6 @@ const classChatData = {
 };
 
 const mainData = {
-  title: "HyundaiOC",
-  teacherProps: teacherData,
-  teacher2Props: teacher2Data,
-  todayInfoProps: todayInfoData,
   todayTimeProps: todayTimeData,
   classChatProps: classChatData,
 };
