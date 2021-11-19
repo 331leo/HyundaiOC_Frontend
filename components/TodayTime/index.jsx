@@ -3,16 +3,7 @@ import TimeTable from "../TimeTable";
 import "./TodayTime.css";
 
 function TodayTime(props) {
-  const {
-    timeTableProps,
-    timeTable2Props,
-    timeTable3Props,
-    timeTable4Props,
-    timeTable5Props,
-    timeTable6Props,
-    timeTable7Props,
-    data,
-  } = props;
+  const { data } = props;
   const classNameArray = [
     "",
     "time-table-4",

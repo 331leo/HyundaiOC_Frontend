@@ -9,7 +9,7 @@
 
 .class {
   height: 32px;
-  letter-spacing: -0.60px;
+  letter-spacing: -0.6px;
   line-height: 24px;
   margin-top: 3px;
   white-space: nowrap;
@@ -23,7 +23,7 @@
   font-size: var(--font-size-xxxxl);
   font-weight: 700;
   height: 47px;
-  letter-spacing: -0.90px;
+  letter-spacing: -0.9px;
   line-height: 36px;
   margin-bottom: -6.5px;
   margin-right: -2px;
@@ -31,3 +31,10 @@
   white-space: nowrap;
 }
 
+.logout {
+  font-family: var(--font-family-sfpro_display-bold);
+  margin-left: 3px;
+  height: 77px;
+  margin-top: 10px;
+  width: auto;
+}

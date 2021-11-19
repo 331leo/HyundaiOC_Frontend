@@ -11,7 +11,6 @@ import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
 function Main(props) {
-  const { todayTimeProps, classChatProps } = props;
   const authToken = localStorage.getItem("HDID_TOKEN");
   const [userData, setUserData] = React.useState({});
   const [nowData, setNowData] = React.useState({});
@@ -83,18 +82,8 @@ function Main(props) {
           />
         </div>
         <div className="flex-row-1">
-          <TodayTime
-            {...todayTimeProps}
-            data={userData?.classes?.[nowData?.weekday]}
-          />
-          <ClassChat
-            title={classChatProps.title}
-            chatProps={classChatProps.chatProps}
-            chat2Props={classChatProps.chat2Props}
-            chat3Props={classChatProps.chat3Props}
-            myChatProps={classChatProps.myChatProps}
-            sendAreaProps={classChatProps.sendAreaProps}
-          />
+          <TodayTime data={userData?.classes?.[nowData?.weekday]} />
+          <ClassChat />
         </div>
       </div>
     </div>

@@ -3,12 +3,12 @@
   flex-direction: column;
   height: 68px;
   justify-content: flex-end;
-  width: 301px;
+  width: auto;
 }
 
 .user-name {
   flex: 1;
-  letter-spacing: -0.40px;
+  letter-spacing: -0.4px;
   line-height: 16px;
   margin-bottom: 2.5px;
   margin-right: 258px;
@@ -38,7 +38,7 @@
 
 .chat.chat-1 {
   margin-top: 27px;
-  width: 272px;
+  width: auto;
 }
 
 .chat.chat-1 .user-name {
@@ -51,7 +51,7 @@
 
 .chat.chat-2 {
   margin-top: 27px;
-  width: 254px;
+  width: auto;
 }
 
 .chat.chat-2 .user-name {
@@ -61,4 +61,3 @@
 .chat.chat-2 .text-4 {
   margin-right: 12px;
 }
-
